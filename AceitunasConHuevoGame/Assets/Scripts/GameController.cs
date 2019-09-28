@@ -56,6 +56,7 @@ public class GameController : MonoBehaviour
         children.Initialize();
         adults.Initialize();
         retired.Initialize();
+        money.Initialize();
 
         UpdateTotalPopulation();
 
@@ -370,6 +371,7 @@ public class GameController : MonoBehaviour
     private void GameOver()
     {
         // TODO: GAME OVER
+        isGamePaused = true;
     }
 
     #region UpgradeMethods

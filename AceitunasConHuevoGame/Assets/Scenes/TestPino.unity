@@ -433,6 +433,62 @@ Transform:
   m_Father: {fileID: 1351666413}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1540307986
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1540307988}
+  - component: {fileID: 1540307987}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1540307987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540307986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8dfb2dfe8085e54a8e22ec24734877c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxTurnsNumber: 35
+  turnsToIncreaseDeterioration: 5
+  money: {fileID: 11400000, guid: 9883e5f5297ee6849819a1496d0c505b, type: 2}
+  children: {fileID: 11400000, guid: cf314cf3a159a934ab970479fe95cbd0, type: 2}
+  adults: {fileID: 11400000, guid: 41f587fbcccda2446a5f87e99908554a, type: 2}
+  retired: {fileID: 11400000, guid: f17bf521a0e9f674fbe011bd00746814, type: 2}
+  education: {fileID: 1158625308}
+  internalEconomy: {fileID: 1528735219}
+  externalEconomy: {fileID: 884175073}
+  populationToUpdate: 0.1
+  evolutionTime: 5
+  timeToUpdatePopulation: 1
+  decisionTime: 5
+--- !u!4 &1540307988
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540307986}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1970259109
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,7 +500,6 @@ GameObject:
   - component: {fileID: 1970259112}
   - component: {fileID: 1970259111}
   - component: {fileID: 1970259110}
-  - component: {fileID: 1970259113}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -517,28 +572,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1970259113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1970259109}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8dfb2dfe8085e54a8e22ec24734877c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxTurnsNumber: 1
-  turnsToIncreaseDeterioration: 5
-  money: {fileID: 11400000, guid: 9883e5f5297ee6849819a1496d0c505b, type: 2}
-  children: {fileID: 11400000, guid: cf314cf3a159a934ab970479fe95cbd0, type: 2}
-  adults: {fileID: 11400000, guid: 41f587fbcccda2446a5f87e99908554a, type: 2}
-  retired: {fileID: 11400000, guid: f17bf521a0e9f674fbe011bd00746814, type: 2}
-  education: {fileID: 1158625308}
-  internalEconomy: {fileID: 1528735219}
-  externalEconomy: {fileID: 884175073}
-  populationToUpdate: 0.1
-  evolutionTime: 5
-  timeToUpdatePopulation: 1
-  decisionTime: 5

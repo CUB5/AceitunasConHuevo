@@ -11,10 +11,7 @@ public class Money : ScriptableObject
     private float initialMoneyUpgrade = 0f;
     public int moneyPerPerson;
     public int lotteryPrize;
-
-    [HideInInspector]
     public int currentMoney;
-    [HideInInspector]
     public float currentMoneyUpgrade;
 
     public void Initialize()
