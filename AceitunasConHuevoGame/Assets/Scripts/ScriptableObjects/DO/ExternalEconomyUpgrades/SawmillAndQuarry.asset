@@ -20,4 +20,4 @@ MonoBehaviour:
   adultsProcreateUpgrade: 0
   childrenToAdultsUpgrade: 0
   adultsToRetiredUpgrade: 0
-  moneyPerPersonUpgrade: 0
+  moneyPerPersonUpgrade: 0.4

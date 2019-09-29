@@ -14,12 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childrenDeathUpgrade: 0
   adultsDeathUpgrade: 0
-  retiredDeathUpgrade: 0
+  retiredDeathUpgrade: -5
   childrenOutUpgrade: 0
   adultsOutUpgrade: 0
-  adultsProcreateUpgrade: 0
+  adultsProcreateUpgrade: 5
   childrenToAdultsUpgrade: 0
   adultsToRetiredUpgrade: 0
-  perfect: 1
-  normal: 0.75
-  ruined: 0.25
+  moneyPerPersonUpgrade: 0

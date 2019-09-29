@@ -16,7 +16,8 @@ MonoBehaviour:
   adultsDeathUpgrade: 0
   retiredDeathUpgrade: 0
   childrenOutUpgrade: 0
-  adultsOutUpgrade: 0
+  adultsOutUpgrade: -5
   adultsProcreateUpgrade: 0
   childrenToAdultsUpgrade: 0
   adultsToRetiredUpgrade: 0
+  moneyPerPersonUpgrade: 0

@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: ChildrenStats
   m_EditorClassIdentifier: 
   initialPopulation: 300
+  currentPopulation: 0
   initialDeathProb: 1
-  initialOutProb: 25
+  currentDeathProb: 0
+  initialOutProb: 30
+  currentOutProb: 0
   initialAdultProb: 15
+  currentAdultProb: 0

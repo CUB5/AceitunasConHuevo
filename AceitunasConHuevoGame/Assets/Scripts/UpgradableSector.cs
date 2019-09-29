@@ -43,6 +43,9 @@ public class UpgradableSector : MonoBehaviour
     public void UpgradeSector()
     {
         currentLevel++;
+
+        if (currentLevel == secondMilestoneLevel || currentLevel == thirdMilestoneLevel || currentLevel == ultimateMilestoneLevel)
+            Repair();
     }
 
     public void IncreaseDeterioration()

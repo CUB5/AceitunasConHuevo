@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AdultStats
   initialPopulation: 500
   currentPopulation: 500
-  initialDeathProb: 1
+  initialDeathProb: 5
   currentDeathProb: 1
-  initialOutProb: 20
+  initialOutProb: 25
   currentOutProb: 20
   initialProcreateProb: 20
   currentProcreateProb: 20

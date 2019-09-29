@@ -50,6 +50,8 @@ public class GameController : MonoBehaviour
 
     private int totalPopulation;
 
+    private bool applyPassTurnBonus;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -116,6 +118,7 @@ public class GameController : MonoBehaviour
         {
             if (timeElapsed >= decisionTime)
             {
+                applyPassTurnBonus = true;
                 StartEvolutionPhase();
             }
         }
@@ -141,6 +144,7 @@ public class GameController : MonoBehaviour
 
     private void NewTurn()
     {
+        applyPassTurnBonus = false;
         isEvolutionTime = false;
         currentTurn++;
         Debug.Log("Turn " + currentTurn);
@@ -365,7 +369,12 @@ public class GameController : MonoBehaviour
 
     private void UpdateMoney()
     {
-        money.currentMoney += (int)(money.moneyPerPerson * money.currentMoneyUpgrade) * totalPopulation;
+        float moneyEarned = (money.moneyPerPerson * money.currentMoneyUpgrade) * totalPopulation;
+
+        if (applyPassTurnBonus)
+            moneyEarned *= money.passTurnBonus;
+
+        money.currentMoney += (int)moneyEarned;
     }
 
     private void GameOver()
@@ -420,6 +429,7 @@ public class GameController : MonoBehaviour
 
     public void PassTurn()
     {
+        applyPassTurnBonus = true;
         StartEvolutionPhase();
     }
     #endregion

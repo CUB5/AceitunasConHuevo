@@ -13,6 +13,7 @@ public class Money : ScriptableObject
     public int lotteryPrize;
     public int currentMoney;
     public float currentMoneyUpgrade;
+    public float passTurnBonus;
 
     public void Initialize()
     {
