@@ -54,8 +54,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\SatorImaging\TerrainToolkit\Editor\TerrainFbxExporter.cs" />
-     <None Include="Assets\FbxExporters\Editor\FbxSdk\LICENSE.txt" />
-     <None Include="Assets\FbxExporters\Editor\FbxSdk\README.txt" />
  <Reference Include="UnityEditor.TestRunner">
  <HintPath>C:/Users/james/Documents/Proyectos/GitHub/AceitunasConHuevo/AceitunasConHuevoGame/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
  </Reference>
@@ -277,15 +275,6 @@
  </Reference>
  <Reference Include="UnityEditor.Android.Extensions">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.6f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="UnityFbxPrefab">
- <HintPath>C:/Users/james/Documents/Proyectos/GitHub/AceitunasConHuevo/AceitunasConHuevoGame/Assets/FbxExporters/UnityFbxPrefab.dll</HintPath>
- </Reference>
- <Reference Include="UnityFbxExporterEditor">
- <HintPath>C:/Users/james/Documents/Proyectos/GitHub/AceitunasConHuevo/AceitunasConHuevoGame/Assets/FbxExporters/Editor/UnityFbxExporterEditor.dll</HintPath>
- </Reference>
- <Reference Include="UnityFbxSdk">
- <HintPath>C:/Users/james/Documents/Proyectos/GitHub/AceitunasConHuevo/AceitunasConHuevoGame/Assets/FbxExporters/Editor/FbxSdk/Plugins/UnityFbxSdk.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
  <HintPath>C:/Users/james/Documents/Proyectos/GitHub/AceitunasConHuevo/AceitunasConHuevoGame/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
