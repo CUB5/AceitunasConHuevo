@@ -7,25 +7,18 @@ public class ChildrenStats : ScriptableObject
 {
     [SerializeField]
     private int initialPopulation = 0;
-
     public int currentPopulation;
 
     [Range(0f, 100f)]
-    [SerializeField]
-    private float initialDeathProb = 0f;
-
+    public float initialDeathProb = 0f;
     public float currentDeathProb;
 
     [Range(0f, 100f)]
-    [SerializeField]
-    private float initialOutProb = 0f;
-
+    public float initialOutProb = 0f;
     public float currentOutProb;
 
     [Range(0f, 100f)]
-    [SerializeField]
-    private float initialAdultProb = 0f;
-
+    public float initialAdultProb = 0f;
     public float currentAdultProb;
 
     public void Initialize()

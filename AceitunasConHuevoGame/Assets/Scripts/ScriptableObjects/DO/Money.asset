@@ -15,7 +15,7 @@ MonoBehaviour:
   initialMoney: 500000
   initialMoneyUpgrade: 1
   moneyPerPerson: 200
-  lotteryPrize: 200000
-  currentMoney: 0
-  currentMoneyUpgrade: 0
+  lotteryPrize: 100000
+  currentMoney: 234945
+  currentMoneyUpgrade: 1.15
   passTurnBonus: 1.5

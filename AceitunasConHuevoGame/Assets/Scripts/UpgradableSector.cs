@@ -40,12 +40,87 @@ public class UpgradableSector : MonoBehaviour
     [HideInInspector]
     public DeteriorationLevel currentDeteriorationLevel;
 
+    [Header("Buildings animations")]
+
+    [SerializeField]
+    public GameObject[] firstBuildingsToHide = new GameObject[0];
+
+    [SerializeField]
+    public GameObject[] firstBuildingsToShow = new GameObject[0];
+
+    [SerializeField]
+    public GameObject[] firstEffectsObjects = new GameObject[0];
+
+    [SerializeField]
+    public GameObject[] secondBuildingsToHide = new GameObject[0];
+
+    [SerializeField]
+    public GameObject[] secondBuildingsToShow = new GameObject[0];
+
+    [SerializeField]
+    public GameObject[] secondEffectsObjects = new GameObject[0];
+
+    [SerializeField]
+    public GameObject[] thirdBuildingsToHide = new GameObject[0];
+
+    [SerializeField]
+    public GameObject[] thirdBuildingsToShow = new GameObject[0];
+
+    [SerializeField]
+    public GameObject[] thirdEffectsObjects = new GameObject[0];
+
+    [SerializeField]
+    public GameObject[] ultimateBuildingsToHide = new GameObject[0];
+
+    [SerializeField]
+    public GameObject[] ultimateBuildingsToShow = new GameObject[0];
+
+    [SerializeField]
+    public GameObject[] ultimateEffectsObjects = new GameObject[0];
+
     public void UpgradeSector()
     {
         currentLevel++;
 
-        if (currentLevel == secondMilestoneLevel || currentLevel == thirdMilestoneLevel || currentLevel == ultimateMilestoneLevel)
+        if (currentLevel == firstMilestoneLevel)
+        {
+            ShowHideEffectObjects(firstEffectsObjects, true);
+            ShowHideEffectObjects(firstBuildingsToHide, false);
+            ShowHideEffectObjects(firstBuildingsToShow, true);
             Repair();
+        }
+
+        if (currentLevel == secondMilestoneLevel)
+        {
+            ShowHideEffectObjects(secondEffectsObjects, true);
+            ShowHideEffectObjects(secondBuildingsToHide, false);
+            ShowHideEffectObjects(secondBuildingsToShow, true);
+            Repair();
+        }
+
+        if (currentLevel == thirdMilestoneLevel)
+        {
+            ShowHideEffectObjects(thirdEffectsObjects, true);
+            ShowHideEffectObjects(thirdBuildingsToHide, false);
+            ShowHideEffectObjects(thirdBuildingsToShow, true);
+            Repair();
+        }
+
+        if (currentLevel == ultimateMilestoneLevel)
+        {
+            ShowHideEffectObjects(ultimateEffectsObjects, true);
+            ShowHideEffectObjects(ultimateBuildingsToHide, false);
+            ShowHideEffectObjects(ultimateBuildingsToShow, true);
+            Repair();
+        }
+    }
+
+    private void ShowHideEffectObjects(GameObject[] objectsList, bool activeValue)
+    {
+        foreach (GameObject go in objectsList)
+        {
+            go.SetActive(activeValue);
+        }
     }
 
     public void IncreaseDeterioration()

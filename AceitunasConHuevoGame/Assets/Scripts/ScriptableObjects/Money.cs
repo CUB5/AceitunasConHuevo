@@ -7,8 +7,8 @@ public class Money : ScriptableObject
 {
     [SerializeField]
     private int initialMoney = 0;
-    [SerializeField]
-    private float initialMoneyUpgrade = 0f;
+
+    public float initialMoneyUpgrade = 0f;
     public int moneyPerPerson;
     public int lotteryPrize;
     public int currentMoney;
